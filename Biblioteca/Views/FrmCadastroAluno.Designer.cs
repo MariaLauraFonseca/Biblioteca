@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    partial class Cadastro_Aluno
+    partial class FrmCadastroAluno
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.txt_SenhaAluno = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chk_Aluno
@@ -114,11 +115,21 @@
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 19;
             // 
-            // Cadastro_Aluno
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(153, 223);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 22;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // FrmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txt_SenhaAluno);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -128,7 +139,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro_Aluno";
+            this.Name = "FrmCadastroAluno";
             this.Text = "Cadastro Aluno";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,5 +157,6 @@
         private System.Windows.Forms.TextBox txt_SenhaAluno;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }

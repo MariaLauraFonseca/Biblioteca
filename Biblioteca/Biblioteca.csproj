@@ -46,59 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="banco.cs" />
-    <Compile Include="Cadastro Professor.cs">
+    <Compile Include="Banco.cs" />
+    <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\Livro.cs" />
+    <Compile Include="Models\Professor.cs" />
+    <Compile Include="Views\FrmCadastroProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro Professor.Designer.cs">
-      <DependentUpon>Cadastro Professor.cs</DependentUpon>
+    <Compile Include="Views\FrmCadastroProfessor.Designer.cs">
+      <DependentUpon>FrmCadastroProfessor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro.cs">
+    <Compile Include="Views\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro.Designer.cs">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <Compile Include="Views\FrmCadastro.Designer.cs">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Livros.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Livros.Designer.cs">
-      <DependentUpon>Livros.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Views\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Views\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro_Aluno.cs">
+    <Compile Include="Views\FrmCadastroAluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro_Aluno.Designer.cs">
-      <DependentUpon>Cadastro_Aluno.cs</DependentUpon>
+    <Compile Include="Views\FrmCadastroAluno.Designer.cs">
+      <DependentUpon>FrmCadastroAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro_Funcionario.cs">
+    <Compile Include="Views\FrmCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro_Funcionario.Designer.cs">
-      <DependentUpon>Cadastro_Funcionario.cs</DependentUpon>
+    <Compile Include="Views\FrmCadastroFuncionario.Designer.cs">
+      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro Professor.resx">
-      <DependentUpon>Cadastro Professor.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCadastroProfessor.resx">
+      <DependentUpon>FrmCadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro.resx">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro_Aluno.resx">
-      <DependentUpon>Cadastro_Aluno.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCadastroAluno.resx">
+      <DependentUpon>FrmCadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro_Funcionario.resx">
-      <DependentUpon>Cadastro_Funcionario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCadastroFuncionario.resx">
+      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    partial class Login
+    partial class FrmLogin
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -33,7 +33,7 @@
             this.txt_NomeLogin = new System.Windows.Forms.TextBox();
             this.txt_SenhaLogin = new System.Windows.Forms.TextBox();
             this.btn_EntrarLogin = new System.Windows.Forms.Button();
-            this.btn_Cadastrar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +71,7 @@
             // 
             // btn_EntrarLogin
             // 
-            this.btn_EntrarLogin.Location = new System.Drawing.Point(253, 178);
+            this.btn_EntrarLogin.Location = new System.Drawing.Point(227, 180);
             this.btn_EntrarLogin.Name = "btn_EntrarLogin";
             this.btn_EntrarLogin.Size = new System.Drawing.Size(75, 23);
             this.btn_EntrarLogin.TabIndex = 4;
@@ -79,27 +79,28 @@
             this.btn_EntrarLogin.UseVisualStyleBackColor = true;
             this.btn_EntrarLogin.Click += new System.EventHandler(this.btn_EntrarLogin_Click);
             // 
-            // btn_Cadastrar
+            // btnCancelar
             // 
-            this.btn_Cadastrar.Location = new System.Drawing.Point(369, 178);
-            this.btn_Cadastrar.Name = "btn_Cadastrar";
-            this.btn_Cadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cadastrar.TabIndex = 5;
-            this.btn_Cadastrar.Text = "Cadastrar-se";
-            this.btn_Cadastrar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(402, 180);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // Login
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_Cadastrar);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btn_EntrarLogin);
             this.Controls.Add(this.txt_SenhaLogin);
             this.Controls.Add(this.txt_NomeLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.Text = "Sistema_Biblioteca";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,7 +114,7 @@
         private System.Windows.Forms.TextBox txt_NomeLogin;
         private System.Windows.Forms.TextBox txt_SenhaLogin;
         private System.Windows.Forms.Button btn_EntrarLogin;
-        private System.Windows.Forms.Button btn_Cadastrar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
 

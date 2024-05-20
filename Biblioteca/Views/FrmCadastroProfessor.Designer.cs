@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    partial class Cadastro_Professor
+    partial class FrmCadastroProfessor
     {
         /// <summary>
         /// Required designer variable.
@@ -105,7 +105,7 @@
             this.txt_SenhaProf.Size = new System.Drawing.Size(100, 20);
             this.txt_SenhaProf.TabIndex = 14;
             // 
-            // Cadastro_Professor
+            // FrmCadastroProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro_Professor";
+            this.Name = "FrmCadastroProfessor";
             this.Text = "Cadastro_Professor";
             this.ResumeLayout(false);
             this.PerformLayout();

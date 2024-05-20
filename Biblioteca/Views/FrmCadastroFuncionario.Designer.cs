@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    partial class Cadastro_Funcionario
+    partial class FrmCadastroFuncionario
     {
         /// <summary>
         /// Required designer variable.

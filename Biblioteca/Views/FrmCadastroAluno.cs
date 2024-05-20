@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Biblioteca
 {
-    public partial class Cadastro_Funcionario : Form
+    public partial class FrmCadastroAluno : Form
     {
-        public Cadastro_Funcionario()
+        public FrmCadastroAluno()
         {
             InitializeComponent();
         }

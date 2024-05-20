@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    partial class Cadastro
+    partial class FrmCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@
             this.btn_Aluno.TabIndex = 0;
             this.btn_Aluno.Text = "Aluno";
             this.btn_Aluno.UseVisualStyleBackColor = true;
+            this.btn_Aluno.Click += new System.EventHandler(this.btn_Aluno_Click);
             // 
             // btn_Professor
             // 
@@ -51,6 +52,7 @@
             this.btn_Professor.TabIndex = 1;
             this.btn_Professor.Text = "Professor";
             this.btn_Professor.UseVisualStyleBackColor = true;
+            this.btn_Professor.Click += new System.EventHandler(this.btn_Professor_Click);
             // 
             // btn_Funcionario
             // 
@@ -60,6 +62,7 @@
             this.btn_Funcionario.TabIndex = 2;
             this.btn_Funcionario.Text = "Funcionário";
             this.btn_Funcionario.UseVisualStyleBackColor = true;
+            this.btn_Funcionario.Click += new System.EventHandler(this.btn_Funcionario_Click);
             // 
             // label1
             // 
@@ -70,7 +73,7 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Em qual categoria você se encaixa?";
             // 
-            // Cadastro
+            // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +82,7 @@
             this.Controls.Add(this.btn_Funcionario);
             this.Controls.Add(this.btn_Professor);
             this.Controls.Add(this.btn_Aluno);
-            this.Name = "Cadastro";
+            this.Name = "FrmCadastro";
             this.Text = "Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();
