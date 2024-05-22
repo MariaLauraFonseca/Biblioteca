@@ -95,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmPrincipal";
             this.Text = "Livros";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

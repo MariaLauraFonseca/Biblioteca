@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnVoltarAluno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chk_Aluno
@@ -123,12 +124,24 @@
             this.btnSalvar.TabIndex = 22;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnVoltarAluno
+            // 
+            this.btnVoltarAluno.Location = new System.Drawing.Point(25, 415);
+            this.btnVoltarAluno.Name = "btnVoltarAluno";
+            this.btnVoltarAluno.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarAluno.TabIndex = 23;
+            this.btnVoltarAluno.Text = "Voltar";
+            this.btnVoltarAluno.UseVisualStyleBackColor = true;
+            this.btnVoltarAluno.Click += new System.EventHandler(this.btnVoltarAluno_Click);
             // 
             // FrmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltarAluno);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txt_SenhaAluno);
             this.Controls.Add(this.label4);
@@ -158,5 +171,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnVoltarAluno;
     }
 }

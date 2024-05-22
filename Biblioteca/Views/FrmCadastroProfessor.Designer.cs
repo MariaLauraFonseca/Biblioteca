@@ -36,6 +36,7 @@
             this.chk_Prof = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_SenhaProf = new System.Windows.Forms.TextBox();
+            this.btnVoltarProfessor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_MateriaProf
@@ -105,11 +106,22 @@
             this.txt_SenhaProf.Size = new System.Drawing.Size(100, 20);
             this.txt_SenhaProf.TabIndex = 14;
             // 
+            // btnVoltarProfessor
+            // 
+            this.btnVoltarProfessor.Location = new System.Drawing.Point(29, 401);
+            this.btnVoltarProfessor.Name = "btnVoltarProfessor";
+            this.btnVoltarProfessor.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarProfessor.TabIndex = 15;
+            this.btnVoltarProfessor.Text = "Voltar";
+            this.btnVoltarProfessor.UseVisualStyleBackColor = true;
+            this.btnVoltarProfessor.Click += new System.EventHandler(this.btnVoltarProfessor_Click);
+            // 
             // FrmCadastroProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltarProfessor);
             this.Controls.Add(this.txt_SenhaProf);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chk_Prof);
@@ -135,5 +147,6 @@
         private System.Windows.Forms.CheckBox chk_Prof;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_SenhaProf;
+        private System.Windows.Forms.Button btnVoltarProfessor;
     }
 }

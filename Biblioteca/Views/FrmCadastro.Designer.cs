@@ -32,11 +32,12 @@
             this.btn_Professor = new System.Windows.Forms.Button();
             this.btn_Funcionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Aluno
             // 
-            this.btn_Aluno.Location = new System.Drawing.Point(179, 124);
+            this.btn_Aluno.Location = new System.Drawing.Point(198, 127);
             this.btn_Aluno.Name = "btn_Aluno";
             this.btn_Aluno.Size = new System.Drawing.Size(75, 23);
             this.btn_Aluno.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btn_Professor
             // 
-            this.btn_Professor.Location = new System.Drawing.Point(322, 124);
+            this.btn_Professor.Location = new System.Drawing.Point(341, 127);
             this.btn_Professor.Name = "btn_Professor";
             this.btn_Professor.Size = new System.Drawing.Size(75, 23);
             this.btn_Professor.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // btn_Funcionario
             // 
-            this.btn_Funcionario.Location = new System.Drawing.Point(473, 124);
+            this.btn_Funcionario.Location = new System.Drawing.Point(492, 127);
             this.btn_Funcionario.Name = "btn_Funcionario";
             this.btn_Funcionario.Size = new System.Drawing.Size(75, 23);
             this.btn_Funcionario.TabIndex = 2;
@@ -73,11 +74,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Em qual categoria você se encaixa?";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(30, 405);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 4;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Funcionario);
             this.Controls.Add(this.btn_Professor);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btn_Professor;
         private System.Windows.Forms.Button btn_Funcionario;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

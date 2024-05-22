@@ -16,5 +16,11 @@ namespace Biblioteca
         {
             InitializeComponent();
         }
+
+        private void btnVoltarProfessor_Click(object sender, EventArgs e)
+        {
+            Form FrmCadastro = new FrmCadastro();
+            FrmCadastro.ShowDialog();
+        }
     }
 }

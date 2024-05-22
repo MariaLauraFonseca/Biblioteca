@@ -36,6 +36,7 @@
             this.txt_SenhaFun = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnVoltarFuncionario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chk_Fun
@@ -105,11 +106,22 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 18;
             // 
-            // Cadastro_Funcionario
+            // btnVoltarFuncionario
+            // 
+            this.btnVoltarFuncionario.Location = new System.Drawing.Point(22, 406);
+            this.btnVoltarFuncionario.Name = "btnVoltarFuncionario";
+            this.btnVoltarFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarFuncionario.TabIndex = 21;
+            this.btnVoltarFuncionario.Text = "Voltar";
+            this.btnVoltarFuncionario.UseVisualStyleBackColor = true;
+            this.btnVoltarFuncionario.Click += new System.EventHandler(this.btnVoltarFuncionario_Click);
+            // 
+            // FrmCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltarFuncionario);
             this.Controls.Add(this.txt_SenhaFun);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -118,7 +130,7 @@
             this.Controls.Add(this.txt_NomeFun);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro_Funcionario";
+            this.Name = "FrmCadastroFuncionario";
             this.Text = "Cadastro_Funcionario";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,5 +147,6 @@
         private System.Windows.Forms.TextBox txt_SenhaFun;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnVoltarFuncionario;
     }
 }

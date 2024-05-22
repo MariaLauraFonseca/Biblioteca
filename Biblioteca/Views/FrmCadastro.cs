@@ -37,5 +37,11 @@ namespace Biblioteca
             Form FrmCadastroFuncionario = new FrmCadastroFuncionario();
             FrmCadastroFuncionario.ShowDialog();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Form FrmPrincipal = new FrmPrincipal();
+            FrmPrincipal.ShowDialog();
+        }
     }
 }

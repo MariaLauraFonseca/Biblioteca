@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,42 @@ namespace Biblioteca
 {
     public partial class FrmCadastroAluno : Form
     {
+        Aluno al;
+        Professor prof;
+        Funcionario func;
+
         public FrmCadastroAluno()
         {
             InitializeComponent();
+        }
+
+        private void btnVoltarAluno_Click(object sender, EventArgs e)
+        {
+            Form FrmCadastro = new FrmCadastro();
+            FrmCadastro.ShowDialog();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (txt_NomeAluno.Text == "") return;
+
+            al = new Aluno()
+            {
+                nome_aluno = txt_NomeAluno.Text,
+                rm = txt_RmAluno.Text,
+                senha_aluno = txt_SenhaAluno.Text
+            };
+
+            al.Salvar(al.nome_aluno, al.senha_aluno, al.rm);
+
+            limpaControles();
+          
+        }
+
+        public void limpaControles()
+        {
+            //Coloca os comando de limpar aq
+            //Clear();
         }
     }
 }

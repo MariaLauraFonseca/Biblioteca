@@ -33,5 +33,10 @@ namespace Biblioteca
         {
             Application.Exit();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            Banco.CriarBanco();
+        }
     }
 }
