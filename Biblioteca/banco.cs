@@ -72,16 +72,16 @@ namespace Biblioteca
 
                 Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS professores " +
                                             "(id integer auto_increment primary key, " +
-                                            "nome_prof varchar(40)," +
+                                            "nome_professor varchar(40)," +
                                             "senha_prof varchar(15)," +
                                             "materia varchar(40)) ", Conexao);
                 Comando.ExecuteNonQuery();
 
                 Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS funcionarios " +
                             "(id integer auto_increment primary key, " +
-                            "nome_func varchar(40),"+
-                            "senha_func varchar(15)," +
-                            "funcao varchar(40)) ", Conexao);
+                            "nome_funcionario varchar(40),"+
+                            "senha_funcionario varchar(15)," +
+                            "funcao_funcionario varchar(40)) ", Conexao);
                 Comando.ExecuteNonQuery();
 
 

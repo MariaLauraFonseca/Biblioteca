@@ -14,12 +14,11 @@ namespace Biblioteca
     public partial class FrmCadastroAluno : Form
     {
         Aluno al;
-        Professor prof;
-        Funcionario func;
 
         public FrmCadastroAluno()
         {
             InitializeComponent();
+    
         }
 
         private void btnVoltarAluno_Click(object sender, EventArgs e)
@@ -47,8 +46,15 @@ namespace Biblioteca
 
         public void limpaControles()
         {
-            //Coloca os comando de limpar aq
-            //Clear();
+            txt_NomeAluno.Clear();
+            txt_RmAluno.Clear();
+            txt_SenhaAluno.Clear();
+            chk_Aluno.Checked = false;
+        }
+
+        private void FrmCadastroAluno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

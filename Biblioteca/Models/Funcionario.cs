@@ -12,26 +12,23 @@ namespace Biblioteca.Models
     {
         public int id { get; set; }
 
-        public string nome_func { get; set; }
+        public string nome_funcionario { get; set; }
 
-        public int funcao { get; set; }
+        public string funcao_funcionario { get; set; }
 
-        public string senha_func { get; set; }
+        public string senha_funcionario { get; set; }
 
-        public void Salvar(string nome, string idCidade, string dataNasc, string cpf, string foto, string venda)
+        public void Salvar(string nome_funcionario, string senha_funcionario, string funcao_funcionario)
         {
             try
             {
                 Banco.Conexao.Open();
                 Banco.Comando = new MySqlCommand
-                    ("INSERT INTO clientes (cliente, idCidade, dataNasc, renda, cpf, foto, venda)" +
-                    "VALUES (@cliente, @idCidade, @dataNasc, @renda, @cpf, @foto, @venda)", Banco.Conexao);
-                Banco.Comando.Parameters.AddWithValue("@nome", nome);
-                Banco.Comando.Parameters.AddWithValue("@idCidade", idCidade);
-                Banco.Comando.Parameters.AddWithValue("@dataNasc", dataNasc);
-                Banco.Comando.Parameters.AddWithValue("@cpf", cpf);
-                Banco.Comando.Parameters.AddWithValue("@foto", foto);
-                Banco.Comando.Parameters.AddWithValue("@venda", venda);
+                    ("INSERT INTO funcionarios (nome_funcionario, senha_funcionario, funcao_funcionario)" +
+                    "VALUES (@nome_funcionario, @senha_funcionario, @funcao_funcionario)", Banco.Conexao);
+                Banco.Comando.Parameters.AddWithValue("@nome_funcionario", nome_funcionario);
+                Banco.Comando.Parameters.AddWithValue("@senha_funcionario", senha_funcionario);
+                Banco.Comando.Parameters.AddWithValue("@funcao_funcionario", funcao_funcionario);
                 Banco.Comando.ExecuteNonQuery();
                 Banco.Conexao.Close();
             }

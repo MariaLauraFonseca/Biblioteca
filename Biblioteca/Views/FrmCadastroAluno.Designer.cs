@@ -154,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastroAluno";
             this.Text = "Cadastro Aluno";
+            this.Load += new System.EventHandler(this.FrmCadastroAluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
