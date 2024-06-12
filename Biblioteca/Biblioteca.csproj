@@ -83,6 +83,24 @@
     <Compile Include="Views\CadastroLivros.Designer.cs">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmCadastroAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCadastroAutor.Designer.cs">
+      <DependentUpon>FrmCadastroAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCadastroCategoria.Designer.cs">
+      <DependentUpon>FrmCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCadastroEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCadastroEditora.Designer.cs">
+      <DependentUpon>FrmCadastroEditora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCadastroProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +141,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Views\CadastroLivros.resx">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCadastroAutor.resx">
+      <DependentUpon>FrmCadastroAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCadastroCategoria.resx">
+      <DependentUpon>FrmCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCadastroEditora.resx">
+      <DependentUpon>FrmCadastroEditora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCadastroProfessor.resx">
       <DependentUpon>FrmCadastroProfessor.cs</DependentUpon>
