@@ -33,11 +33,12 @@
             this.btn_Funcionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Aluno
             // 
-            this.btn_Aluno.Location = new System.Drawing.Point(198, 127);
+            this.btn_Aluno.Location = new System.Drawing.Point(116, 138);
             this.btn_Aluno.Name = "btn_Aluno";
             this.btn_Aluno.Size = new System.Drawing.Size(75, 23);
             this.btn_Aluno.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // btn_Professor
             // 
-            this.btn_Professor.Location = new System.Drawing.Point(341, 127);
+            this.btn_Professor.Location = new System.Drawing.Point(259, 138);
             this.btn_Professor.Name = "btn_Professor";
             this.btn_Professor.Size = new System.Drawing.Size(75, 23);
             this.btn_Professor.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btn_Funcionario
             // 
-            this.btn_Funcionario.Location = new System.Drawing.Point(492, 127);
+            this.btn_Funcionario.Location = new System.Drawing.Point(410, 138);
             this.btn_Funcionario.Name = "btn_Funcionario";
             this.btn_Funcionario.Size = new System.Drawing.Size(75, 23);
             this.btn_Funcionario.TabIndex = 2;
@@ -84,11 +85,21 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(558, 138);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Livro";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Funcionario);
@@ -108,5 +119,6 @@
         private System.Windows.Forms.Button btn_Funcionario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -77,6 +77,12 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Livro.cs" />
     <Compile Include="Models\Professor.cs" />
+    <Compile Include="Views\CadastroLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastroLivros.Designer.cs">
+      <DependentUpon>CadastroLivros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCadastroProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\CadastroLivros.resx">
+      <DependentUpon>CadastroLivros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCadastroProfessor.resx">
       <DependentUpon>FrmCadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
